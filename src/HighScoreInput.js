@@ -14,7 +14,7 @@ class HighScoreInput extends Component {
 
   persistWinner = event =>{
     event.preventDefault()
-    const newEntry = { guesses: this.props.guesses, player: this.state.winne }
+    const newEntry = { guesses: this.props.guesses, player: this.state.winner }
     saveHOFEntry(newEntry, this.props.onStored)
   }
 

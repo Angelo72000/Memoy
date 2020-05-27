@@ -6,7 +6,7 @@ import './App.css'
 
 import Card from './Card'
 import GuessCount from './GuessCount'
-import HallOfFame, { FAKE_HOF } from './HallOfFame'
+import HallOfFame from './HallOfFame'
 
 const SIDE = 2 //6
 const SYMBOLS = '😀🎉💖🎩🐶🐱🦄🐬🌍🌛🌞💫🍎🍌🍓🍐🍟🍿'
@@ -21,6 +21,7 @@ class App extends Component {
     matchedCardIndices: [],
   }
 
+  // Arrow fx for binding
   displayHallOfFame = hallOfFame =>{
     this.setState({ hallOfFame })
   }
@@ -107,7 +108,7 @@ class App extends Component {
         )
           
         }
-        {won && <HallOfFame entries={FAKE_HOF} />}
+        {/* {won && <HallOfFame entries={FAKE_HOF} />} */}
       </div>
     )
   }
