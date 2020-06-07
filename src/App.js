@@ -21,6 +21,7 @@ class App extends Component {
     matchedCardIndices: [],
   }
 
+  // Arrow fx for binding
   displayHallOfFame = hallOfFame =>{
     this.setState({ hallOfFame })
   }
