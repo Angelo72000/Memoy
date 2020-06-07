@@ -5,6 +5,13 @@ import './HallOfFame.css'
 
 const HallOfFame = ({ entries }) => (
   <table className="hallOfFame">
+    <thead>
+        <tr>
+          <th className="date">Date</th>
+          <th className="guesses">Nb erreurs</th>
+          <th className="player">Joueurs</th>
+        </tr>
+    </thead>
     <tbody>
       {entries.map(({ date, guesses, id, player }) => (
         <tr key={id}>
