@@ -1,2 +1,0 @@
-# Memoy
-Tuto
